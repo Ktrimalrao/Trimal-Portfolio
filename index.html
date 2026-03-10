@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K. Trimal Rao | Portfolio</title>
+
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- Swiper CSS (for sliders if extended later) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ========== Sidebar Navigation ========== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar__top">
+            <a href="#home" class="sidebar__logo">
+                <div class="sidebar__avatar">
+                    <!-- Replace with your image: assets/img/profile.jpg -->
+                    <img src="assets\project-thumbnails\Trimal_passphoto.JPG" alt="K. Trimal Rao">
+                </div>
+                <div class="sidebar__info">
+                    <h1 class="sidebar__name">K. Trimal Rao</h1>
+                    <p class="sidebar__role">Data Scientist | AI Engineer | Data Engineer</p>
+                </div>
+            </a>
+
+            <button class="sidebar__close" id="sidebar-close">
+                <i class="uil uil-times"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar__nav">
+            <a href="#home" class="sidebar__link active-link"><i class="uil uil-estate"></i><span>Home</span></a>
+            <a href="#about" class="sidebar__link"><i class="uil uil-user"></i><span>About</span></a>
+            <a href="#education" class="sidebar__link"><i class="uil uil-university"></i><span>Education</span></a>
+            <a href="#experience" class="sidebar__link"><i class="uil uil-briefcase-alt"></i><span>Experience</span></a>
+            <a href="#projects" class="sidebar__link"><i class="uil uil-layer-group"></i><span>Projects</span></a>
+            <a href="#skills" class="sidebar__link"><i class="uil uil-chart-line"></i><span>Skills</span></a>
+            <a href="#certifications" class="sidebar__link"><i class="uil uil-award"></i><span>Certifications</span></a>
+            <a href="#publications" class="sidebar__link"><i class="uil uil-book-open"></i><span>Publications</span></a>
+            <a href="#achievements" class="sidebar__link"><i class="uil uil-trophy"></i><span>Achievements</span></a>
+            <a href="#leadership" class="sidebar__link"><i class="uil uil-users-alt"></i><span>Leadership</span></a>
+            <a href="#contact" class="sidebar__link"><i class="uil uil-envelope"></i><span>Contact</span></a>
+        </nav>
+
+        <div class="sidebar__bottom">
+            <div class="sidebar__socials">
+                <a href="https://www.linkedin.com/in/k-trimal-rao-397924253" target="_blank" rel="noreferrer">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ktrimalrao" target="_blank" rel="noreferrer">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="uil uil-moon theme-toggle__icon" id="theme-icon"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="header" id="header">
+        <div class="header__left">
+            <button class="header__menu" id="sidebar-open">
+                <i class="uil uil-apps"></i>
+            </button>
+            <span class="header__title">Portfolio</span>
+        </div>
+        <button class="theme-toggle header__theme" id="theme-toggle-mobile" aria-label="Toggle dark mode">
+            <i class="uil uil-moon theme-toggle__icon" id="theme-icon-mobile"></i>
+        </button>
+    </header>
+
+    <!-- ========== Main Content ========== -->
+    <main class="main">
+        <!-- ========== HOME SECTION ========== -->
+        <section class="section home" id="home">
+            <div class="section__inner home__grid">
+                <div class="home__content reveal">
+                    <span className="section__eyebrow">Hello, I'm</span>
+                    <h2 class="section__title">K. Trimal Rao</h2>
+                    <p class="home__subtitle">Data Scientist | AI Engineer | Data Engineer</p>
+
+                    <p class="section__description">
+                        Motivated Computer Science student with a passion for Data Science, AI, Data Engineering, Big Data,
+                        and Software Development. Skilled in building machine learning models, architecting end-to-end data
+                        pipelines, working with Google BigQuery, deploying AI solutions, and developing scalable applications.
+                    </p>
+
+                    <ul class="home__meta">
+                        <li>
+                            <i class="uil uil-location-point"></i>
+                            Bengaluru, Karnataka – 560066, India
+                        </li>
+                        <li>
+                            <i class="uil uil-phone"></i>
+                            <a href="tel:+917008394304">+91 7008394304</a>
+                        </li>
+                        <li>
+                            <i class="uil uil-envelope-alt"></i>
+                            <a href="mailto:ktrimalrao16@gmail.com">ktrimalrao16@gmail.com</a>
+                        </li>
+                    </ul>
+
+                    <div class="home__actions">
+                        <a href="#about" class="btn btn--primary">
+                            <span>More About Me</span>
+                            <i class="uil uil-arrow-down"></i>
+                        </a>
+                        <div class="home__socials">
+                            <a href="https://www.linkedin.com/in/k-trimal-rao-397924253" target="_blank" rel="noreferrer">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Ktrimalrao" target="_blank" rel="noreferrer">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__image reveal">
+                    <!-- Replace hero.png with your own hero image -->
+                    <div class="home__image-wrapper">
+                        <img src="assets\project-thumbnails\pic_new.jpg" alt="Data Science & AI" class="home__img">
+                        <!-- <div class="home__badge">
+                            <i class="uil uil-brain"></i>
+                            <span>AI & Data</span>
+                        </div>
+                        <div class="home__badge home__badge--secondary">
+                            <i class="uil uil-chart-growth"></i>
+                            <span>Big Data</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section class="section" id="about">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="section__subtitle">Who I am</p>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__info">
+                        <h3 class="about__name">K. Trimal Rao</h3>
+                        <p class="about__meta">
+                            <span>B.Tech in Computer Science Engineering</span> ·
+                            <span>NIST Institute of Science and Technology</span>
+                        </p>
+                        <p class="section__description">
+                            I am a passionate Data Scientist and AI Engineer with strong expertise in machine learning, big data,
+                            and cloud technologies. I enjoy building scalable data pipelines, deploying ML models, and solving
+                            real-world problems using AI.
+                        </p>
+                        <div class="about__highlights">
+                            <div class="about__highlight">
+                                <span class="about__highlight-number">20+</span>
+                                <span class="about__highlight-label">Projects</span>
+                            </div>
+                            <div class="about__highlight">
+                                <span class="about__highlight-number"><i class="uil uil-robot"></i></span>
+                                <span class="about__highlight-label">Data Science & AI Enthusiast</span>
+                            </div>
+                            <div class="about__highlight">
+                                <span class="about__highlight-number"><i class="uil uil-database-alt"></i></span>
+                                <span class="about__highlight-label">ML & Data Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__details">
+                        <ul class="about__list">
+                            <li>
+                                <span class="about__label">Degree</span>
+                                <span class="about__value">B.Tech in Computer Science Engineering</span>
+                            </li>
+                            <li>
+                                <span class="about__label">University</span>
+                                <span class="about__value">NIST Institute of Science and Technology</span>
+                            </li>
+                            <li>
+                                <span class="about__label">Location</span>
+                                <span class="about__value">Bengaluru, India</span>
+                            </li>
+                            <li>
+                                <span class="about__label">Email</span>
+                                <span class="about__value"><a href="mailto:ktrimalrao16@gmail.com">ktrimalrao16@gmail.com</a></span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn--outline">
+                            <span>Let's Connect</span>
+                            <i class="uil uil-message"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EDUCATION SECTION ========== -->
+        <section class="section" id="education">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Education</h2>
+                    <p class="section__subtitle">Academic Background</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__icon">
+                            <i class="uil uil-graduation-cap"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">NIST Institute of Science and Technology</h3>
+                            <p class="timeline__subtitle">B.Tech in Computer Science Engineering</p>
+                            <span class="timeline__date">2021 – 2025</span>
+                            <p class="timeline__meta">CGPA: 8.92</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__icon">
+                            <i class="uil uil-graduation-cap"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Scince H S College, Konkorada</h3>
+                            <p class="timeline__subtitle">Intermediate, CHSE</p>
+                            <span class="timeline__date">2019 – 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EXPERIENCE SECTION ========== -->
+        <section class="section" id="experience">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Experience</h2>
+                    <p class="section__subtitle">What I've worked on</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__icon">
+                            <i class="uil uil-briefcase-alt"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Summer Research Intern</h3>
+                            <p class="timeline__subtitle">National Institute of Technology, Rourkela</p>
+                            <span class="timeline__date">May 2024 – July 2024</span>
+                            <ul class="timeline__list">
+                                <li>Developed a U-Net model for image segmentation and integrated CNN for classification.</li>
+                                <li>Achieved 97% accuracy in lung cancer detection from CT scan images.</li>
+                                <li>Improved diagnostic precision using deep learning.</li>
+                                <li>Presented the research in the internship seminar.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__icon">
+                            <i class="uil uil-briefcase-alt"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Rewards and Recognition System (Trainee Intern)</h3>
+                            <p class="timeline__subtitle">Gyansys Infotech · Bengaluru, India</p>
+                            <span class="timeline__date">January 2025 – June 2025</span>
+                            <ul class="timeline__list">
+                                <li>Developed an intuitive nomination platform enabling managers to recognize top performers seamlessly.</li>
+                                <li>Implemented a structured HR review and approval workflow to streamline nomination shortlisting and approvals.</li>
+                                <li>Created automated notifications to keep managers, HR, and employees informed about nomination status and award announcements.</li>
+                                <li>Designed a Recognition Wall to track and display all awarded employees, fostering motivation and appreciation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__icon">
+                            <i class="uil uil-briefcase-alt"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Data &amp; AI Engineer</h3>
+                            <p class="timeline__subtitle">ThoughtFocus · Bengaluru, India</p>
+                            <span class="timeline__date">July 2025 – Present</span>
+                            <p class="timeline__meta">
+                                Currently working on data and AI initiatives, contributing to scalable data pipelines and intelligent analytics solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <section class="section section--box" id="projects">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Projects</h2>
+                    <p class="section__subtitle">Selected Work</p>
+                </div>
+
+                <div class="projects__controls">
+                    <button class="projects__filter projects__filter--active" type="button" data-filter="top">
+                        <span>Top</span>
+                    </button>
+                    <button class="projects__filter" type="button" data-filter="all">
+                        <span>All</span>
+                    </button>
+                    <button class="projects__filter" type="button" data-filter="data-eng">
+                        <span>Data Engineering</span>
+                    </button>
+                    <button class="projects__filter" type="button" data-filter="ml-ai">
+                        <span>ML &amp; AI</span>
+                    </button>
+                    <button class="projects__filter" type="button" data-filter="gen-ai">
+                        <span>Generative AI</span>
+                    </button>
+                    <button class="projects__filter" type="button" data-filter="other">
+                        <span>Others</span>
+                    </button>
+                </div>
+
+                <!-- Project cards rendered via JavaScript -->
+                <div class="projects__grid" id="projects-container"></div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS SECTION ========== -->
+        <section class="section section--box" id="skills">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Skills</h2>
+                    <p class="section__subtitle">What I work with</p>
+                </div>
+
+                <div class="skills__grid">
+                    <div class="skills__group">
+                        <h3 class="skills__title"><i class="uil uil-code skills__icon"></i> Programming</h3>
+                        <ul class="skills__list">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__group">
+                        <h3 class="skills__title"><i class="uil uil-brain skills__icon"></i> Machine Learning</h3>
+                        <ul class="skills__list">
+                            <li>Scikit-learn</li>
+                            <li>Keras</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__group">
+                        <h3 class="skills__title"><i class="uil uil-database skills__icon"></i> Big Data</h3>
+                        <ul class="skills__list">
+                            <li>Apache Spark</li>
+                            <li>Hadoop</li>
+                            <li>Databricks</li>
+                            <li>PySpark</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__group">
+                        <h3 class="skills__title"><i class="uil uil-cloud skills__icon"></i> Cloud</h3>
+                        <ul class="skills__list">
+                            <li>Microsoft Azure</li>
+                            <li>Google Cloud</li>
+                            <li>Google BigQuery</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__group">
+                        <h3 class="skills__title"><i class="uil uil-processor skills__icon"></i> Generative AI</h3>
+                        <ul class="skills__list">
+                            <li>LangChain</li>
+                            <li>RAG</li>
+                            <li>LLMs</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__group">
+                        <h3 class="skills__title"><i class="uil uil-wrench skills__icon"></i> Tools</h3>
+                        <ul class="skills__list">
+                            <li>Git &amp; GitHub</li>
+                            <li>Jupyter Notebook</li>
+                            <li>VS Code</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CERTIFICATIONS SECTION ========== -->
+        <section class="section section--box" id="certifications">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Certifications</h2>
+                    <p class="section__subtitle">Verified skills</p>
+                </div>
+
+                <div class="cards">
+                    <a class="card card--link" href="https://learn.microsoft.com/en-us/users/ktrimalrao-4493/credentials/85c8293bedf6a6c3" target="_blank" rel="noreferrer">
+                        <div class="card__icon">
+                            <i class="uil uil-award"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Microsoft Certified: Azure Data Scientist Associate</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link" href="https://www.coursera.org/account/accomplishments/specialization/SCKEZ3MATVN6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank" rel="noreferrer">
+                        <div class="card__icon">
+                            <i class="uil uil-award"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Google Data Analytics Certificate (Coursera)</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link" href="https://www.coursera.org/account/accomplishments/specialization/SCKEZ3MATVN6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank" rel="noreferrer">
+                        <div class="card__icon">
+                            <i class="uil uil-award"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Microsoft Certified: Azure AI Fundamentals</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link" href="https://achieve.snowflake.com/6f97389a-eead-45a1-8080-d161db0b65ce#acc.HA7kIESC" target="_blank" rel="noreferrer">
+                        <div class="card__icon">
+                            <i class="uil uil-snowflake"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">SnowPro Associate: Platform Certification</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link" href="https://www.credly.com/badges/e66c47bd-36f5-4f5d-93e9-b977ab66c063/print" target="_blank" rel="noreferrer">
+                        <div class="card__icon">
+                            <i class="uil uil-process"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Apache Airflow 3 Fundamentals</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link" href="https://drive.google.com/file/d/1i-LQWdhlDxgHjRjltTgb3gkeir4Yisi6/view" target="_blank" rel="noreferrer">
+                        <div class="card__icon">
+                            <i class="uil uil-award"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Python for Data Science</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PUBLICATIONS SECTION ========== -->
+        <section class="section section--box" id="publications">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Publications</h2>
+                    <p class="section__subtitle">Research work</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="uil uil-book-open"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Integrating U-Net and CNN for Enhanced Lung Cancer Detection in Healthcare
+                            </h3>
+                            <p class="card__description">
+                                Accepted at IEEE International Conference · November 2024.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ACHIEVEMENTS SECTION ========== -->
+        <section class="section section--box" id="achievements">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Achievements</h2>
+                    <p class="section__subtitle">Milestones</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="uil uil-trophy"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Qualified GATE 2024 – Data Science &amp; AI</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== LEADERSHIP SECTION ========== -->
+        <section class="section section--box" id="leadership">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Leadership</h2>
+                    <p class="section__subtitle">Community roles</p>
+                </div>
+
+                <div class="cards cards--two">
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="uil uil-users-alt"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Technical Lead</h3>
+                            <p class="card__description">Data Science Club – NIST</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="uil uil-users-alt"></i>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Machine Learning Lead</h3>
+                            <p class="card__description">Google Developer Group on Campus – NIST</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section class="section section--box" id="contact">
+            <div class="section__inner reveal">
+                <div class="section__header">
+                    <h2 class="section__title">Contact</h2>
+                    <p class="section__subtitle">Let's work together</p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h3 class="contact__title">Contact Details</h3>
+                        <ul class="contact__list">
+                            <li>
+                                <i class="uil uil-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <a href="tel:+917008394304">+91 7008394304</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="uil uil-envelope-alt"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <a href="mailto:ktrimalrao16@gmail.com">ktrimalrao16@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="uil uil-location-point"></i>
+                                <div>
+                                    <span>Location</span>
+                                    <p>Bengaluru, India</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__form-row">
+                            <div class="contact__field">
+                                <label for="name">Name</label>
+                                <div class="contact__input-wrapper">
+                                    <i class="uil uil-user"></i>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                            </div>
+                            <div class="contact__field">
+                                <label for="email">Email</label>
+                                <div class="contact__input-wrapper">
+                                    <i class="uil uil-envelope-alt"></i>
+                                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__form-row">
+                            <div class="contact__field">
+                                <label for="phone">Phone</label>
+                                <div class="contact__input-wrapper">
+                                    <i class="uil uil-phone"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__field">
+                            <label for="message">Message</label>
+                            <div class="contact__input-wrapper contact__input-wrapper--textarea">
+                                <i class="uil uil-comment-alt-message"></i>
+                                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn--primary contact__submit">
+                            <span>Send Message</span>
+                            <i class="uil uil-message"></i>
+                        </button>
+                        <p class="contact__status" id="contact-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Scroll To Top ========== -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="uil uil-arrow-up"></i>
+    </button>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    <!-- MixItUp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
