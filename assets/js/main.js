@@ -438,47 +438,115 @@ if (scrollTopBtn) {
     });
 }
 
-/* ========= CONTACT FORM (FRONT-END ONLY) ========= */
-const contactForm = document.getElementById('contact-form');
-const contactStatus = document.getElementById('contact-status');
+// /* ========= CONTACT FORM (FRONT-END ONLY) ========= */
+// const contactForm = document.getElementById('contact-form');
+// const contactStatus = document.getElementById('contact-status');
+
+// if (contactForm) {
+//     contactForm.addEventListener('submit', event => {
+//         event.preventDefault();
+//         const formData = new FormData(contactForm);
+//         const name = formData.get('name');
+//         const email = formData.get('email');
+//         const phone = formData.get('phone') || '';
+//         const message = formData.get('message');
+
+//         if (!name || !email || !message) {
+//             if (contactStatus) {
+//                 contactStatus.textContent = 'Please fill in all required fields.';
+//             }
+//             return;
+//         }
+
+//         const subject = encodeURIComponent(`Portfolio Contact - ${name}`);
+//         const bodyLines = [
+//             `Name: ${name}`,
+//             `Email: ${email}`,
+//             `Phone: ${phone}`,
+//             '',
+//             'Message:',
+//             message
+//         ];
+//         const body = encodeURIComponent(bodyLines.join('\n'));
+
+//         window.location.href = `mailto:ktrimaljam@gmail.com?subject=${subject}&body=${body}`;
+
+//         contactForm.reset();
+//         if (contactStatus) {
+//             contactStatus.textContent = 'Opening your email client to send the message...';
+//         }
+//         setTimeout(() => {
+//             if (contactStatus) contactStatus.textContent = '';
+//         }, 5000);
+//     });
+// }
+
+/* ========= CONTACT FORM SUBMIT ========= */
+
+const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
-    contactForm.addEventListener('submit', event => {
-        event.preventDefault();
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const phone = formData.get('phone') || '';
-        const message = formData.get('message');
 
-        if (!name || !email || !message) {
-            if (contactStatus) {
-                contactStatus.textContent = 'Please fill in all required fields.';
-            }
+    contactForm.addEventListener("submit", async function(e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const status = document.getElementById("form-status");
+
+        if (!name || !email || !phone || !message) {
+            status.innerText = "Please fill all fields";
+            status.style.color = "red";
             return;
         }
 
-        const subject = encodeURIComponent(`Portfolio Contact - ${name}`);
-        const bodyLines = [
-            `Name: ${name}`,
-            `Email: ${email}`,
-            `Phone: ${phone}`,
-            '',
-            'Message:',
-            message
-        ];
-        const body = encodeURIComponent(bodyLines.join('\n'));
+        try {
 
-        window.location.href = `mailto:ktrimaljam@gmail.com?subject=${subject}&body=${body}`;
+            const response = await fetch("http://localhost:5000/api/contact", {
 
-        contactForm.reset();
-        if (contactStatus) {
-            contactStatus.textContent = 'Opening your email client to send the message...';
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    name,
+                    email,
+                    phone,
+                    message
+                })
+
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+
+                status.innerText = "Message sent successfully!";
+                status.style.color = "green";
+
+                contactForm.reset();
+
+            } else {
+
+                status.innerText = data.message || "Failed to send message";
+                status.style.color = "red";
+
+            }
+
+        } catch (error) {
+
+            status.innerText = "Server error. Try again later.";
+            status.style.color = "red";
+
         }
-        setTimeout(() => {
-            if (contactStatus) contactStatus.textContent = '';
-        }, 5000);
+
     });
+
 }
 
 /* ========= OPTIONAL: SWIPER INIT (READY FOR FUTURE USE) ========= */
