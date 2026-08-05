@@ -116,10 +116,32 @@ const PROJECT_THUMB_PLACEHOLDER =
 
 const projects = [
     {
+        id: 'bank-fraud',
+        title: 'Bank Transaction Fraud Detection System',
+        category: 'data-eng',
+        featured: true,
+        badge: 'Data Engineering',
+        description:
+            'Built an end-to-end fraud detection platform on Microsoft Fabric using a medallion architecture, combining rule-based detection and ML scoring with automated fraud response, email alerts, and explainable AI.',
+        tech: [
+            'Microsoft Fabric',
+            'PySpark',
+            'Delta Lake',
+            'ETL Pipelines',
+            'Python',
+            'scikit-learn',
+            'MLflow',
+            'Gmail SMTP'
+        ],
+        thumbnail: PROJECT_THUMB_BASE + 'bank-fraud.png',
+        github: 'https://github.com/Ktrimalrao/Bank-Transaction-Fraud-Detection-System-Hybrid-Rule-Based-Machine-Learning-Pipeline.git',
+        demo: 'https://www.linkedin.com/posts/k-trimal-rao-397924253_datascience-dataengineering-machinelearning-ugcPost-7488737714012594176--C7M/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD6bWyMBVKIr5mKw9IlYynWs1-xUyw1aKHU'
+    },
+    {
         id: 'azure-pipeline',
         title: 'Azure Big Data Engineering Pipeline (Olist E-commerce Dataset)',
         category: 'data-eng',
-        featured: true,
+        featured: false,
         badge: 'Data Engineering',
         description:
             'End-to-end big data engineering pipeline on Microsoft Azure for the Olist e-commerce dataset, automating ingestion from GitHub and MySQL, transforming it with PySpark, and serving analytics through Medallion architecture and Synapse.',
@@ -358,7 +380,7 @@ function mountCards(container, items) {
 }
 
 function getFeaturedProjects() {
-    const featuredOrder = ['azure-pipeline', 'lung-cancer'];
+    const featuredOrder = ['bank-fraud', 'lung-cancer'];
     return featuredOrder.map(id => projects.find(p => p && p.id === id)).filter(Boolean);
 }
 
